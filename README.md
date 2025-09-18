@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=abdr007" alt="abdr007" /></a> </p>
 
-- 🔭 I’m currently working on [100 exercises to learn Rust(main matter)](https://rust-exercises.com/100-exercises/05_ticket_v2/07_unwrap.html)
+- 🔭 I’m currently working on [100 exercises to learn Rust(main matter)](https://rust-exercises.com/100-exercises/01_intro/00_welcome.html)
 
 - 🌱 I’m currently learning about **Blockchain, Solana, DeFi**
 
