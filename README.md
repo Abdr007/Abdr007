@@ -2,10 +2,6 @@
 
 <br>
 
-```
-> whoami
-```
-
 # Abdul Rahman
 
 **Blockchain Infrastructure Engineer**
