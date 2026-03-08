@@ -1,90 +1,124 @@
-
 <div align="center">
+
+<br>
+
+```
+> whoami
+```
 
 # Abdul Rahman
 
-Blockchain Infrastructure Engineer
+**Blockchain Infrastructure Engineer**
+
+Building trading systems, transaction pipelines, and AI-powered tools on Solana.
 
 <br>
 
-I design and build trading systems, transaction pipelines, and developer tools<br>for on-chain protocols on Solana.
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/Solana-9945FF?style=flat-square&logo=solana&logoColor=white" />
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
 
 <br>
 
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
-<img src="https://img.shields.io/badge/Solana-9945FF?style=flat&logo=solana&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white" />
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdr007)
 
-<br><br>
+<br>
 
 ---
 
 <br>
 
-### Featured Project
+### Projects
 
 <br>
 
-<a href="https://github.com/Abdr007/flash-ai-terminal">
-<img src="https://img.shields.io/badge/FLASH_AI_TERMINAL-000000?style=for-the-badge" />
-</a>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<br><br>
+<h3 align="center"><a href="https://github.com/Abdr007/flash-ai-terminal">Flash AI Terminal</a></h3>
+<p align="center">Professional CLI trading terminal for Flash Trade perpetuals on Solana</p>
+<p align="center">
+<img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
+<img src="https://img.shields.io/badge/Solana-black?style=flat-square&logo=solana" />
+</p>
+<p align="center"><sub>On-chain execution · Risk preview · RPC failover · Trade simulation · Market scanner</sub></p>
+<p align="center"><a href="https://flash-ai-terminal-docs.vercel.app">Documentation</a></p>
 
-A command-line trading terminal for [Flash Trade](https://www.flash.trade/) perpetuals on Solana.
+</td>
+<td width="50%" valign="top">
 
-AI-assisted commands · Real-time risk monitoring · On-chain execution · Transaction dry-run
+<h3 align="center"><a href="https://github.com/Abdr007/nexus">Nexus</a></h3>
+<p align="center">AI-powered crypto intelligence platform with real-time market data</p>
+<p align="center">
+<img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
+<img src="https://img.shields.io/badge/AI-black?style=flat-square&logo=openai" />
+</p>
+<p align="center"><sub>Multi-LLM routing · Market analysis · Glassmorphic UI</sub></p>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3 align="center"><a href="https://github.com/Abdr007/flash-risk-engine">Flash Risk Engine</a></h3>
+<p align="center">Read-only risk intelligence engine for Flash Trade perpetuals</p>
+<p align="center">
+<img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
+<img src="https://img.shields.io/badge/Solana-black?style=flat-square&logo=solana" />
+</p>
+<p align="center"><sub>Liquidation risk · Position monitoring · Protocol inspection</sub></p>
+
+</td>
+<td width="50%" valign="top">
+
+<h3 align="center"><a href="https://github.com/Abdr007/prism-ai">Prism AI</a></h3>
+<p align="center">Cross-exchange AI risk intelligence for perpetual futures</p>
+<p align="center">
+<img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
+<img src="https://img.shields.io/badge/AI-black?style=flat-square&logo=openai" />
+</p>
+<p align="center"><sub>Multi-exchange · Risk scoring · AI analysis</sub></p>
+
+</td>
+</tr>
+</table>
 
 <br>
 
-</div>
+---
+
+<br>
+
+### What I Build
+
+**Infrastructure** — RPC failover, transaction pipelines, state reconciliation<br>
+**Trading Systems** — On-chain execution, risk engines, market scanners<br>
+**AI Tools** — LLM-powered CLIs, multi-model routing, intelligent agents<br>
+**Protocol Integrations** — Flash Trade, Pyth, Solana DeFi
+
+<br>
+
+---
+
+<br>
 
 ```
 flash [live] > open 5x long SOL $500
 
-  Position Summary
-  ─────────────────────────────
-  Market:      SOL-PERP
-  Side:        LONG
-  Leverage:    5.0x
+  Market:      SOL-PERP          Risk:     MODERATE
+  Side:        LONG              Liq:      $112.80
+  Leverage:    5.0x              Distance: 18.0%
   Collateral:  $500.00
   Size:        $2,500.00
 
   Confirm? (yes/no) _
 ```
 
-<div align="center">
-
 <br>
 
-**60+ source files · 20 subsystems · Production-grade transaction safety**
-
-RPC failover with slot lag detection · Trade mutex and signature dedup ·<br>
-Multi-strategy market scanner · Liquidation risk monitor ·<br>
-Protocol inspector · Plugin architecture
-
-<br>
-
-<a href="https://github.com/Abdr007/flash-ai-terminal">View Repository</a>
-
-<br><br>
-
----
-
-<br>
-
-**What I build**
-
-Blockchain RPC infrastructure · Transaction pipelines · Risk engines<br>
-AI-powered CLI tools · Protocol integrations · State reconciliation systems
-
-<br>
-
----
-
-<br>
-
-<sub>Open an issue or reach out through GitHub.</sub>
+<sub>India · Open to collaborations · Reach out through GitHub</sub>
 
 </div>
