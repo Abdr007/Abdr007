@@ -108,11 +108,15 @@ Building trading systems, transaction pipelines, and AI-powered tools on Solana.
 ```
 flash [live] > open 5x long SOL $500
 
-  Market:      SOL-PERP          Risk:     MODERATE
-  Side:        LONG              Liq:      $112.80
-  Leverage:    5.0x              Distance: 18.0%
-  Collateral:  $500.00
-  Size:        $2,500.00
+  ┌─────────────────────────────────────┐
+  │  Market:      SOL-PERP              │
+  │  Side:        LONG                  │
+  │  Leverage:    5.0x                  │
+  │  Collateral:  $500.00               │
+  │  Size:        $2,500.00             │
+  │  Risk:        MODERATE              │
+  │  Liq Price:   $112.80  (18.0%)      │
+  └─────────────────────────────────────┘
 
   Confirm? (yes/no) _
 ```
