@@ -6,7 +6,7 @@
 
 **Blockchain Infrastructure Engineer**
 
-Building trading systems, transaction pipelines, and AI-powered tools on Solana.
+Building trading systems, transaction pipelines, and protocol tooling on Solana.
 
 <br>
 
@@ -34,14 +34,14 @@ Building trading systems, transaction pipelines, and AI-powered tools on Solana.
 <tr>
 <td width="50%" valign="top">
 
-<h3 align="center"><a href="https://github.com/Abdr007/flash-ai-terminal">Flash AI Terminal</a></h3>
-<p align="center">Professional CLI trading terminal for Flash Trade perpetuals on Solana</p>
+<h3 align="center"><a href="https://github.com/Abdr007/flash-terminal">Flash Terminal</a></h3>
+<p align="center">Deterministic CLI trading terminal for Flash Trade perpetuals on Solana</p>
 <p align="center">
 <img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
 <img src="https://img.shields.io/badge/Solana-black?style=flat-square&logo=solana" />
 </p>
-<p align="center"><sub>On-chain execution · Risk preview · RPC failover · Trade simulation · Market scanner</sub></p>
-<p align="center"><a href="https://flash-ai-terminal-docs.vercel.app">Documentation</a></p>
+<p align="center"><sub>On-chain execution · Risk preview · RPC failover · Trade simulation · Market observability</sub></p>
+<p align="center"><a href="https://flash-terminal-docs.vercel.app">Documentation</a></p>
 
 </td>
 <td width="50%" valign="top">
@@ -92,7 +92,7 @@ Building trading systems, transaction pipelines, and AI-powered tools on Solana.
 
 **Infrastructure** — RPC failover, transaction pipelines, state reconciliation<br>
 **Trading Systems** — On-chain execution, risk engines, market scanners<br>
-**AI Tools** — LLM-powered CLIs, multi-model routing, intelligent agents<br>
+**Protocol Tooling** — CLI terminals, protocol inspectors, observability tools<br>
 **Protocol Integrations** — Flash Trade, Pyth, Solana DeFi
 
 <br>
@@ -104,17 +104,20 @@ Building trading systems, transaction pipelines, and AI-powered tools on Solana.
 ```
 flash [live] > open 5x long SOL $500
 
-  ┌─────────────────────────────────────┐
-  │  Market:      SOL-PERP              │
-  │  Side:        LONG                  │
-  │  Leverage:    5.0x                  │
-  │  Collateral:  $500.00               │
-  │  Size:        $2,500.00             │
-  │  Risk:        MODERATE              │
-  │  Liq Price:   $112.80  (18.0%)      │
-  └─────────────────────────────────────┘
+  CONFIRM TRANSACTION
+  ─────────────────────────────────
+    Market:      SOL LONG
+    Leverage:    5x
+    Collateral:  $500.00
+    Size:        $2,500.00
+    Est. Fee:    $2.00
 
-  Confirm? (yes/no) _
+    Est. Entry:  $148.52
+    Est. Liq:    $121.79
+    Distance:    18.0%
+    Risk:        HIGH
+
+  Type "yes" to sign or "no" to cancel
 ```
 
 <br>
