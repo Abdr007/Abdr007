@@ -22,7 +22,6 @@ Software engineer focused on blockchain protocol integration, transaction pipeli
 <br><br>
 
 [![X](https://img.shields.io/badge/@Dev__ABDR-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/Dev_ABDR)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdr007)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Abdr007)
 
 <br>
