@@ -4,10 +4,7 @@
 
 # ABDR
 
-**Systems engineer. Building autonomous trading infrastructure on Solana.**
-
-I design deterministic execution systems where every parameter comes from chain state,
-every decision passes through safety gates, and every outcome feeds back into learning.
+**Systems engineer. Building trading infrastructure on Solana.**
 
 <br>
 
@@ -29,62 +26,58 @@ every decision passes through safety gates, and every outcome feeds back into le
 
 <br>
 
-### Currently Building
+### Featured Project
 
 <br>
 
 <a href="https://github.com/Abdr007/flash-terminal">
-  <img src="https://img.shields.io/badge/Flash_Terminal-v1.0.5-26d97f?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Flash_Terminal-v1.2.3-26d97f?style=for-the-badge" />
 </a>
 
 <br><br>
 
-**Deterministic on-chain trading infrastructure for Solana perpetual futures.**
+**Production CLI for trading Solana perpetual futures on Flash Trade.**
 
-Full execution engine with an autonomous Q-learning agent, 10-layer safety stack, and every value derived from chain state. Not a wrapper. Not a dashboard. A trading system.
+97 commands. 32+ markets. Simulation mode. 10-layer safety stack. Published on npm.
 
 <br>
 
 <table>
 <tr>
-<td align="center"><strong>32</strong><br><sub>Live Markets</sub></td>
-<td align="center"><strong>1,926</strong><br><sub>Test Assertions</sub></td>
-<td align="center"><strong>10</strong><br><sub>Safety Layers</sub></td>
-<td align="center"><strong>0</strong><br><sub>Fabricated Values</sub></td>
+<td align="center"><strong>97</strong><br><sub>Commands</sub></td>
+<td align="center"><strong>32+</strong><br><sub>Markets</sub></td>
+<td align="center"><strong>1,743</strong><br><sub>Tests</sub></td>
+<td align="center"><strong>48K</strong><br><sub>Lines of Code</sub></td>
 </tr>
 </table>
 
 <br>
 
 ```
-flash [live] > open 2x long SOL $100
+flash [sim] > open 5x long SOL $500
 
   CONFIRM TRANSACTION
   ─────────────────────────────────
   Market:      SOL LONG
-  Leverage:    2x
-  Collateral:  $100.00
-  Size:        $200.00
-  Fees:        Open: $0.16 | Est. close: $0.16
-  Liq Distance: 48.2%
+  Leverage:    5x
+  Collateral:  $500.00 USDC
+  Size:        $2,500.00
+  Est. Fee:    $2.00
 
-  Type "yes" to sign or "no" to cancel
+  Proceed? [y/N]
 ```
 
 <br>
 
-| System | What It Does |
-|:-------|:-------------|
-| **Autonomous Agent** | Q-learning with 36 entry states, 540 exit states. Learns what works, disables what doesn't. |
-| **Signal Fusion** | 6 strategies (momentum, mean-rev, whale, volume, funding, microstructure) combined via Bayesian fusion |
-| **Edge Validation** | 200-trade production validator. Strategies below 20bps EV auto-disable. |
-| **Signing Guard** | Pre-sign confirmation, per-trade limits, rate limiting (10/min, 3s delay) |
-| **Circuit Breaker** | Halts trading on session/daily loss thresholds. Manual reset required. |
-| **Kill Switch** | Master toggle. Blocks all trade operations. Monitoring continues. |
-| **TX Pipeline** | Program whitelist, instruction freeze, on-chain simulation before broadcast |
-| **Crash Recovery** | Trade journal with pending TX verification on restart |
-| **State Reconciliation** | Blockchain-authoritative position sync every 60s |
-| **RPC Failover** | Multi-endpoint with slot lag detection and leader-aware TPU routing |
+| Layer | Purpose |
+|:------|:--------|
+| **Signing Guard** | Per-trade limits, rate limiter, audit log |
+| **Circuit Breaker** | Halts trading on session/daily loss thresholds |
+| **Kill Switch** | Master toggle — disables all trades instantly |
+| **Pre-flight Simulation** | Every TX simulated on-chain before broadcast |
+| **Program Whitelist** | Only Flash Trade + Solana system programs allowed |
+| **RPC Failover** | Multi-endpoint with slot lag detection |
+| **State Reconciliation** | Blockchain-authoritative sync every 60s |
 
 <br>
 
@@ -105,27 +98,14 @@ flash [live] > open 2x long SOL $100
 <td width="50%" valign="top">
 
 <h3 align="center"><a href="https://github.com/Abdr007/flash-terminal">Flash Terminal</a></h3>
-<p align="center">Autonomous trading engine for Flash Trade perpetuals on Solana</p>
+<p align="center">CLI trading terminal for Flash Trade perpetuals on Solana</p>
 <p align="center">
 <img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
 <img src="https://img.shields.io/badge/Solana-black?style=flat-square&logo=solana" />
 </p>
-<p align="center"><sub>Q-learning agent &middot; 10-layer safety &middot; On-chain execution &middot; 32 markets &middot; 1,926 tests</sub></p>
+<p align="center"><sub>97 commands &middot; 10-layer safety &middot; On-chain execution &middot; 1,743 tests</sub></p>
 
 </td>
-<td width="50%" valign="top">
-
-<h3 align="center"><a href="https://github.com/Abdr007/nexus">Nexus</a></h3>
-<p align="center">AI-powered crypto intelligence platform with real-time market data</p>
-<p align="center">
-<img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
-<img src="https://img.shields.io/badge/AI-black?style=flat-square&logo=openai" />
-</p>
-<p align="center"><sub>Multi-LLM routing &middot; Market analysis &middot; Glassmorphic UI</sub></p>
-
-</td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 <h3 align="center"><a href="https://github.com/Abdr007/flash-risk-engine">Flash Risk Engine</a></h3>
@@ -137,10 +117,23 @@ flash [live] > open 2x long SOL $100
 <p align="center"><sub>Liquidation risk &middot; Position monitoring &middot; Protocol inspection</sub></p>
 
 </td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3 align="center"><a href="https://github.com/Abdr007/nexus">Nexus</a></h3>
+<p align="center">AI-powered crypto intelligence platform with real-time market data</p>
+<p align="center">
+<img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
+<img src="https://img.shields.io/badge/AI-black?style=flat-square&logo=openai" />
+</p>
+<p align="center"><sub>Multi-LLM routing &middot; Market analysis &middot; Glassmorphic UI</sub></p>
+
+</td>
 <td width="50%" valign="top">
 
 <h3 align="center"><a href="https://github.com/Abdr007/prism-ai">Prism AI</a></h3>
-<p align="center">Cross-exchange AI risk intelligence for perpetual futures</p>
+<p align="center">Cross-exchange risk intelligence for perpetual futures</p>
 <p align="center">
 <img src="https://img.shields.io/badge/TypeScript-black?style=flat-square&logo=typescript" />
 <img src="https://img.shields.io/badge/AI-black?style=flat-square&logo=openai" />
@@ -164,11 +157,10 @@ flash [live] > open 2x long SOL $100
 </div>
 
 ```
-TRADING SYSTEMS        Autonomous agents, deterministic execution, on-chain TX pipelines
+TRADING SYSTEMS        Deterministic execution, on-chain TX pipelines, safety infrastructure
 BLOCKCHAIN INFRA       RPC failover, state reconciliation, protocol-level integration
 RISK ENGINEERING       Circuit breakers, exposure controls, signing guards, kill switches
-LEARNING SYSTEMS       Q-learning policies, edge validation, strategy pruning, regime detection
-CLI TOOLING            Terminal interfaces, protocol inspectors, observability engines
+CLI TOOLING            Terminal interfaces, protocol inspectors, market monitoring
 ```
 
 <div align="center">
@@ -179,7 +171,7 @@ CLI TOOLING            Terminal interfaces, protocol inspectors, observability e
 
 <br>
 
-### Design Principles
+### Principles
 
 <br>
 
@@ -189,7 +181,6 @@ CLI TOOLING            Terminal interfaces, protocol inspectors, observability e
 Deterministic over probabilistic.      Every trade follows a fixed, auditable pipeline.
 Chain state over local state.           Blockchain is the single source of truth.
 Safety as infrastructure.               Risk gates are not optional. They're load-bearing.
-Learning from outcomes.                 Systems that measure their own edge and adapt.
 Bounded by design.                      Every cache, buffer, and retry has a hard limit.
 ```
 
@@ -210,7 +201,7 @@ Bounded by design.                      Every cache, buffer, and retry has a har
 
 <br>
 
-<sub>Building open infrastructure for the Flash Trade ecosystem &middot; Open to collaborations</sub>
+<sub>Building open infrastructure for the Flash Trade ecosystem</sub>
 
 <br>
 
